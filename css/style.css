@@ -793,4 +793,7 @@ pre {
   .cta-container h2 {
     font-size: 1.5rem;
   }
+  .container {
+    padding: 0 16px;
+  }
 }
