@@ -799,4 +799,7 @@ pre {
   .feature-icon {
     margin-bottom: 0;
   }
+  .footer-brand {
+  justify-content: center;
+  }
 }
