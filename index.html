@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Easy Font Converter — Convert Fonts in VS Code</title>
+    <meta
+      name="description"
+      content="Convert TTF/OTF to WOFF/WOFF2 directly in VS Code. Single click, batch convert, custom output. The fastest font workflow for developers."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="images/icon.png" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <div class="logo">
+          <img
+            src="images/icon.png"
+            alt="Easy Font Converter"
+            class="logo-icon"
+            width="32"
+            height="32"
+          />
+          <span class="logo-text">Easy Font Converter</span>
+        </div>
+        <nav class="nav">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#how-it-works" class="nav-link">How it works</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+        </nav>
+        <a
+          href="https://marketplace.visualstudio.com/items?itemName=ovcharovcoder.easy-font-converter"
+          class="btn btn-primary btn-sm"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>Install now</span>
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5 12H19M19 12L13 6M19 12L13 18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="badge">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+              VS Code extension
+            </div>
+            <h1 class="hero-title">
+              Convert fonts<br />
+              <span class="gradient-text">without leaving your editor</span>
+            </h1>
+            <p class="hero-description">
+              TTF, OTF → WOFF, WOFF2. One click or batch. Custom output folder.
+              No more browser tabs, no waiting — just right-click and convert.
+            </p>
+            <div class="hero-buttons">
+              <a
+                href="https://marketplace.visualstudio.com/items?itemName=ovcharovcoder.easy-font-convert"
+                class="btn btn-primary btn-lg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Install from Marketplace
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M5 12H19M19 12L13 6M19 12L13 18"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://github.com/ovcharovcoder/easy-font-convert"
+                class="btn btn-outline btn-lg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.68-.21.68-.48 0-.24-.01-.88-.01-1.73-2.78.6-3.37-1.18-3.37-1.18-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33.85 0 1.7.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48C19.13 20.17 22 16.42 22 12c0-5.52-4.48-10-10-10z"
+                  />
+                </svg>
+                GitHub
+              </a>
+            </div>
+            <div class="hero-stats">
+              <span
+                ><svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                1.0.2</span
+              >
+              <span
+                ><svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"
+                  />
+                </svg>
+                Open source (MIT)</span
+              >
+              <span
+                ><svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+                100% free</span
+              >
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="demo-card">
+              <div class="demo-header">
+                <span
+                  ><svg
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M4 4h16v16H4zM8 4v16M16 4v16" />
+                  </svg>
+                  Explorer</span
+                >
+                <span class="demo-badge">right‑click magic</span>
+              </div>
+              <div class="demo-files">
+                <div class="file selected">Inter-Regular.ttf</div>
+                <div class="file selected">Roboto-Bold.ttf</div>
+                <div class="file">OpenSans.ttf</div>
+              </div>
+              <div class="demo-context">
+                <div class="context-item">Convert to WOFF</div>
+                <div class="context-item active">Convert to WOFF2</div>
+                <div class="context-item">
+                  Group Convert to WOFF & WOFF2
+                  <span class="badge-new">Batch!</span>
+                </div>
+              </div>
+              <div class="demo-result">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                2 files converted → <strong>Inter-Regular.woff2</strong>,
+                <strong>Roboto-Bold.woff2</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section features">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Why it's different</span>
+            <h2>
+              Designed for
+              <span class="gradient-text">developers, by a developer</span>
+            </h2>
+            <p class="section-subhead">
+              No distractions. Just right-click and convert.
+            </p>
+          </div>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <polygon
+                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                  />
+                </svg>
+              </div>
+              <h3>One-click conversion</h3>
+              <p>
+                Right‑click any .ttf/.otf → choose format → done. No online
+                tools, no drag‑and‑drop.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg>
+              </div>
+              <h3>Group convert (batch)</h3>
+              <p>
+                Select 2 or 20 fonts at once. Convert all to WOFF, WOFF2 or
+                both. Progress bar + summary report.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                  />
+                </svg>
+              </div>
+              <h3>Custom output folder</h3>
+              <p>
+                Keep original files clean. Set a global or per‑project folder,
+                or save right next to the source.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"
+                  />
+                </svg>
+              </div>
+              <h3>Font hinting</h3>
+              <p>
+                Better rendering on low‑res screens. Optional — disable for
+                slightly smaller file sizes.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                </svg>
+              </div>
+              <h3>Smart overwrite</h3>
+              <p>
+                Never lose files. You decide if existing .woff/.woff2 should be
+                replaced or skipped.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"
+                  />
+                </svg>
+              </div>
+              <h3>Command palette support</h3>
+              <p>
+                Ctrl+Shift+P → type “font” → convert without touching the mouse.
+                Fast keyboard workflow.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="section how-it-works">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">3 steps</span>
+            <h2>
+              From font file to <span class="gradient-text">web‑ready</span> in
+              seconds
+            </h2>
+          </div>
+          <div class="steps">
+            <div class="step">
+              <div class="step-number">1</div>
+              <h3>Select files</h3>
+              <p>
+                Single font: just click once.<br />Multiple fonts: hold
+                <kbd>Ctrl</kbd> (or <kbd>Cmd</kbd>) + click.
+              </p>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <h3>Right‑click → convert</h3>
+              <p>
+                Choose WOFF, WOFF2 or both. For batch, pick any Group Convert
+                option.
+              </p>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <h3>Done</h3>
+              <p>
+                Converted files appear instantly. Progress bar shows what’s
+                happening.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section faq">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Questions?</span>
+            <h2>Simple answers, <span class="gradient-text">no fluff</span></h2>
+          </div>
+          <div class="faq-grid">
+            <div class="faq-item">
+              <h3>Does it work with OTF?</h3>
+              <p>Yes – both TTF and OTF are fully supported.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Can I convert back from WOFF to TTF?</h3>
+              <p>
+                No, this extension is one‑way (TTF/OTF → WOFF/WOFF2). That’s the
+                most common web workflow.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3>What’s the difference between WOFF and WOFF2?</h3>
+              <p>
+                WOFF2 uses Brotli compression and gives 30‑50% smaller files.
+                WOFF has slightly better browser support (IE9+). The extension
+                lets you pick both.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3>Is it really free?</h3>
+              <p>
+                Yes. Open source (MIT). No hidden costs, no telemetry, no ads.
+              </p>
+            </div>
+            <div class="faq-item">
+              <h3>Where can I report issues or request features?</h3>
+              <p>GitHub issues — I actively maintain the project.</p>
+            </div>
+            <div class="faq-item">
+              <h3>Do I need to restart VS Code after install?</h3>
+              <p>
+                No, the extension works immediately. You can also reload window
+                if you prefer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container cta-container">
+          <h2>
+            Stop switching between tools.<br />Start converting
+            <span class="gradient-text">right inside VS Code</span>.
+          </h2>
+          <a
+            href="https://marketplace.visualstudio.com/items?itemName=ovcharovcoder.easy-font-convert"
+            class="btn btn-primary btn-xl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Install Easy Font Converter
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M5 12H19M19 12L13 6M19 12L13 18"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
+          <p class="cta-note">
+            Free · Open source · Works with VS Code 1.85.0+
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-brand">
+          <img
+            src="images/icon.png"
+            alt="Easy Font Converter"
+            class="logo-icon"
+            width="28"
+            height="28"
+          />
+          <span>Easy Font Converter</span>
+          <p>
+            Made by
+            <a href="https://github.com/ovcharovcoder" target="_blank"
+              >Andrii Ovcharov</a
+            >
+            – for developers who value time.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a
+            href="https://marketplace.visualstudio.com/items?itemName=ovcharovcoder.easy-font-converter"
+            target="_blank"
+            >Marketplace</a
+          >
+          <a
+            href="https://github.com/ovcharovcoder/easy-font-convert"
+            target="_blank"
+            >GitHub</a
+          >
+          <a
+            href="https://github.com/ovcharovcoder/easy-font-convert/issues"
+            target="_blank"
+            >Report issue</a
+          >
+        </div>
+        <div class="footer-copy">MIT License · 2026</div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
