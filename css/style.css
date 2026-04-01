@@ -796,4 +796,7 @@ pre {
   .container {
     padding: 0 16px;
   }
+  .feature-icon {
+    margin-bottom: 0;
+  }
 }
