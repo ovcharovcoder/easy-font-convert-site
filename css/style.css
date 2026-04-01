@@ -802,6 +802,9 @@ pre {
   .footer-brand {
   justify-content: center;
   }
+  .footer-brand p {
+  text-align: center;
+  }
   .footer-container {
   justify-content: center;
   }
