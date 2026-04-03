@@ -678,7 +678,6 @@ pre {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 32px;
-  align-items: flex-start;
 }
 
 .footer-brand p {
@@ -702,10 +701,10 @@ pre {
 .footer-links a::after {
   content: '';
   position: absolute;
-  bottom: -40px;
+  bottom: 38px;
   left: 0;
   width: 0;
-  height: 1px;
+  height: 2px;
   background: linear-gradient(90deg, #0f62fe, #8b5cf6);
   transition: width 0.2s ease;
 }
