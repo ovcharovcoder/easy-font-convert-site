@@ -678,6 +678,7 @@ pre {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 32px;
+  align-items: flex-start;
 }
 
 .footer-brand p {
