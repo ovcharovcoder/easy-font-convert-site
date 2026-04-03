@@ -810,4 +810,6 @@ pre {
   .footer-container {
     justify-content: center;
   }
+  .faq-grid {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
