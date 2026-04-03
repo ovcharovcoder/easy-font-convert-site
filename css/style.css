@@ -540,8 +540,9 @@ body::after {
 
 .step:hover {
   transform: translateY(-6px);
-  background: rgba(255, 255, 255, 0.98);
   border-color: rgba(15, 98, 254, 0.25);
+  box-shadow: 0 25px 35px -12px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.98);
 }
 
 .step-number {
@@ -601,9 +602,10 @@ pre {
 }
 
 .faq-item:hover {
-  background: rgba(255, 255, 255, 0.98);
+  transform: translateY(-6px);
   border-color: rgba(15, 98, 254, 0.25);
-  transform: translateX(4px);
+  box-shadow: 0 25px 35px -12px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.98);
 }
 
 .faq-item h3 {
@@ -800,12 +802,12 @@ pre {
     margin-bottom: 0;
   }
   .footer-brand {
-  justify-content: center;
+    justify-content: center;
   }
   .footer-brand p {
-  text-align: center;
+    text-align: center;
   }
   .footer-container {
-  justify-content: center;
+    justify-content: center;
   }
 }
